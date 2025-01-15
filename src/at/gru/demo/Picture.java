@@ -1,14 +1,12 @@
 package at.gru.demo;
-import java.sql.Date;
+import java.util.Date;
 
 public class Picture {
-    private float resolution;
     private String name;
     private Date date;
-    private float size;
+    private int size;
 
-    public Picture(float resolution, String name, Date date, float size) {
-        this.resolution = resolution;
+    public Picture(String name, Date date, int size) {
         this.name = name;
         this.date = date;
         this.size = size;
@@ -22,12 +20,8 @@ public class Picture {
     public String getName() {
         return name;
     }
-    
-    public float getResolution() {
-        return resolution;
-    }
 
-    public float getSize() {
+    public int getSize() {
         return size;
     }
 
@@ -40,11 +34,7 @@ public class Picture {
         this.name = name;
     }
 
-    public void setResolution(float resolution) {
-        this.resolution = resolution;
-    }
-
-    public void setSize(float size) {
+    public void setSize(int size) {
         this.size = size;
     }
 }
